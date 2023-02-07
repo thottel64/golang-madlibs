@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A trip to the zoo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+<h1>Mad libs using the words you entered</h1>
+<br>
+<p>Today I went to the zoo and I saw a(n), {{.FormValue "descriptor"}} {{.FormValue "animal1"}}! </p>
+<p> Jumping up and down in its tree. </p>
+<p> He {{.FormValue "verb"}} {{.FormValue "adverb"}} through the large tunnel that led to a</p>
+<p> {{.FormValue "adjective"}} {{.FormValue "noun"}} !!</p>
+<p>THE END!!!!</p>
+</body>
+</html>

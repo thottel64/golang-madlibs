@@ -46,7 +46,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.Handle("/", &templateHandler{filename: "index.html"})
-	http.Handle("/greet", &templateHandler{filename: "templates/greeting.html"})
+	http.Handle("/madlib", &templateHandler{filename: "templates/madlib.html"})
 	log.Println("Starting server on :8080")
 	if err := http.ListenAndServe(":8080", nil); err != nil {
 		log.Fatal("ListenAndServe:", err)
